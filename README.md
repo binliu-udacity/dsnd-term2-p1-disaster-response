@@ -16,15 +16,14 @@ The goal of the project is to apply data engineering skills to analyze the [Disa
 There are three components:
 
 ### 2.1. ETL Pipeline
-This is a data cleaning pipeline, which doing the following works:
+This is a data cleaning pipeline, that:
 - Load Messages and Categories csv datasets 
 - Merge the two datasets
 - Clean the data
 - Save data into a SQLite database
 
 ### 2.2. ML Pipeline
-This machine learning pipeline performs training and testing of ML model and save the result to a pickle file.
-
+This is a machine learning pipeline, that:
 - Loads data from the SQLite database
 - Splits the dataset into training and test sets
 - Builds a text processing and machine learning pipeline
@@ -33,6 +32,7 @@ This machine learning pipeline performs training and testing of ML model and sav
 - Exports the final model as a pickle file
 
 ### 2.3. Flask Web App
+A Web application that is built and run using Flask framework.
 
 ## 3. File Description <a name="FileDescription"></a>
 There are three main folders:
@@ -60,11 +60,17 @@ pip install -r requirements.txt
 1. Run the following commands in the project's root directory to set up your database and model.
 
     - To run ETL pipeline that cleans data and stores in database
-        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
+		```python
+		python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
+		```      
     - To run ML pipeline that trains classifier and saves model
-        `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
-
+		```python    
+        python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
+		```      
 2. Run the following command in the app's directory to run your web app.
-    `python run.py`
+	```python    
+    python run.py
+	```          
 
 3. Go to http://0.0.0.0:3001/
+
