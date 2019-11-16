@@ -10,8 +10,8 @@ Udacity Data Scientist Nanodegree - Term 2 - Project 1 - Disaster Response Pipel
 5. [Instructions](#Instructions)
 
 ## 1. Project Overview <a name="ProjectOverview"></a>
-The goal of the project is to apply data engineering skills to analyze the [Disaster Response Messages](https://www.figure-eight.com/dataset/combined-disaster-response-data/) dataset provided by Figure Eight, and build a ML model classifying disaster messages based on predefined categories. End result of this project is a web application where an emergency worker can type in input message and our application using ML model in the background, classifies the message based on several categories and then highlights various categories that the input message belong to.
-
+The goal of the project is to apply data engineering skills to analyze the [Disaster Response Messages](https://www.figure-eight.com/dataset/combined-disaster-response-data/) dataset provided by Figure Eight, and build a web application that can help emergency workers analyze incoming messages and sort them into specific categories to speed up aid and contribute to more efficient distribution of people and other resources.
+ 
 ### 2. Project Components <a name="ProjectComponents"></a>
 There are three components:
 
@@ -38,13 +38,13 @@ A Web application that is built and run using Flask framework.
 There are three main folders:
 
 1. data
-    - disaster_categories.csv: dataset including all the categories
-    - disaster_messages.csv: dataset including all the messages
-    - process_data.py: ETL pipeline scripts to read, clean, and save data into a database
-    - DisasterResponse.db: output of the ETL pipeline, i.e. SQLite database containing messages and categories data
+    - disaster_categories.csv: datafile of all the categories
+    - disaster_messages.csv: datafile of all the messages
+    - process_data.py: ETL pipeline scripts
+    - DisasterResponse.db: output of the ETL pipeline
 2. models
     - train_classifier.py: machine learning pipeline scripts to train and export a classifier
-    - classifier.pkl: output of the machine learning pipeline, i.e. a trained classifier
+    - classifier.pkl: output of the machine learning pipeline
 3. app
     - run.py: Flask file to run the web application
     - templates contains html file for the web application
