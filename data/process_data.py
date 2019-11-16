@@ -39,15 +39,6 @@ def clean_data(df):
     Returns:
         df (pandas dataframe): Cleaned dataframe with split categories
     """
-    # # clean stop words in messages
-    # for idx,  line in enumerate(df['message']):
-    #     line = re.sub(r"[^a-zA-Z0-9]", " ", line.lower())
-    #     words = word_tokenize(line)
-    #     words_wostop =  [w for w in words if w not in stopwords.words("english")]
-    #     # df['message'][idx] = " ".join(words_wostop)
-    #     df.iloc[idx]['message'] = " ".join(words_wostop)
-
-
     # expand the categories column
     categories = df['categories'].str.split(';', expand= True)
     row = categories.iloc [0,:]
