@@ -72,7 +72,7 @@ pip install -r requirements.txt
 	    python run.py
 		```          
 
-3. Go to http://0.0.0.0:3001/
+3. Go to http://127.0.0.1:3001/
 
 ![alt text](https://github.com/binliu-base/dsnd-term2-p1-disaster-response/blob/master/screenshots/webpage.png)
 
