@@ -74,5 +74,5 @@ pip install -r requirements.txt
 
 3. Go to http://0.0.0.0:3001/
 
-[alt text](https://github.com/binliu-base/dsnd-term2-p1-disaster-response/blob/master/screenshots/webpage.png)
+![alt text](https://github.com/binliu-base/dsnd-term2-p1-disaster-response/blob/master/screenshots/webpage.png)
 
