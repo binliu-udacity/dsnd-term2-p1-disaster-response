@@ -57,13 +57,13 @@ pip install -r requirements.txt
 ```
 
 ## 5. Instructions <a name="Instructions"></a>
-1. Run the following commands in the project's root directory to set up your database and model.
+1. Run the following commands in the project's root directory to process data and train model.
 
-    - To run ETL pipeline that cleans data and stores in database
+    - Run the ETL pipeline to clean data and store it in a SQLite database
 		```python
 		python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db
 		```      
-    - To run ML pipeline that trains classifier and saves model
+    - Run the ML pipeline to trains and tunes a model using GridSearchCV, and save the model
 		```python    
         python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
 		```      
