@@ -68,7 +68,7 @@ pip install -r requirements.txt
         python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
 		```      
 2. Run your web app with the following command in the app's directory.
-		```python    
+		```    
 	    python run.py
 		```          
 
